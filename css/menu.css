@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@100&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+/* start common component */
+
+/* end  common component */
+/* start  public component */
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+/*end public component */
+
+/* ............................................................ */
+/* start header */
+/* start header iamge */
+.header-logo{
+width:10%;
+height: 10%;
+margin-left: 1%;
+   
+}
+/* end header iamge */
+/* start header-basic */
+.header-large-box{
+    width:100%;
+    margin: 4% 0;
+}
+ .header-basic{
+    width:60%;
+    margin: 0 1%;
+}
+.header-menu{
+    width:30%;
+   
+}
+.header-icons{
+    width:10%;
+    
+}
+.header-large-box , .header-basic , .header-menu ,.header-icons {
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+font-size: 70%;
+font-weight: 700;
+color:black;
+
+}
+.basic-link,.menu-link{
+color:black;
+font-weight: 600;
+font-size:1.4em;
+}
+.basic-link:hover,.menu-link:hover{
+   background-color: black;
+   outline:35% solid black;
+   border-radius:35% ;
+   -webkit-border-radius:35%  ;
+   -moz-border-radius:35%  ;
+   -ms-border-radius:35%  ;
+   -o-border-radius:35%  ;
+   color:white;
+}
+.basic-list{
+    padding:2% 0 0 4%;
+
+}
+.menu-list{
+    padding:4% 0 0 4%;
+
+}
+.icon-link{
+    color:black;
+}
+.icons-i{
+    font-size:3em;
+    margin: 1% 3%;
+    
+}
+
+ 
+
+
+/* end header basic */
+
+/* end header */

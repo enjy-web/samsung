@@ -1,0 +1,753 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+body{
+    perspective: 600px;
+}
+.container{
+    width:100%;
+    height: 100%;
+    background-color:pink;
+    /* grid-template-columns: repeat(auto-fit,minmax(100px,1fr)); */
+    display:grid;
+    gap: 10px;
+    grid-template-areas:
+     "head head head head"
+     "asd box1 box2 box3"
+     "asd sec sec sec"
+     "tv tv tv tv "
+     "home home home home"
+     "sust sust sust sust"
+     "nev nev nev nev "
+     "exp exp exp exp"
+     "search search search search"
+     "samsung samsung samsung samsung"
+     "priv priv priv priv"
+     "sh sup off sus "
+     "foot-sec foot-sec foot-sec foot-sec"
+     "foot foot foot foot"
+     ;
+
+     
+}
+/* start header iamge */
+.header-logo{
+width:10%;
+height: 10%;
+margin-left: 1%;
+   
+}
+/* end header iamge */
+/* start header-basic */
+.header-large-box{
+    width:100%;
+    margin: 4% 0;
+}
+ .header-basic{
+    width:60%;
+    margin: 0 1%;
+}
+.header-menu{
+    width:30%;
+   
+}
+.header-icons{
+    width:10%;
+    
+}
+.header-large-box , .header-basic , .header-menu ,.header-icons {
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+font-size: 70%;
+font-weight: 700;
+color:black;
+
+}
+.basic-link,.menu-link{
+color:black;
+font-weight: 600;
+font-size:1.4em;
+}
+.basic-link:hover,.menu-link:hover{
+   background-color: black;
+   outline:35% solid black;
+   border-radius:35% ;
+   -webkit-border-radius:35%  ;
+   -moz-border-radius:35%  ;
+   -ms-border-radius:35%  ;
+   -o-border-radius:35%  ;
+   color:white;
+}
+.basic-list{
+    padding:2% 0 0 4%;
+
+}
+.menu-list{
+    padding:4% 0 0 4%;
+
+}
+.icon-link{
+    color:black;
+}
+.icons-i{
+    font-size:3em;
+    margin: 1% 3%;
+    
+}
+
+ 
+
+
+/* end header basic */
+
+/* end header */
+
+/* //////////////////////////////////////// */
+.heading-title{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3%;
+    width:100%;
+    
+
+}
+header{
+background-color: blueviolet;
+grid-area: head;
+}
+.box1{
+    grid-area: box1;
+    background-color: rgb(171, 128, 211);
+
+}
+.box2{
+    grid-area: box2;
+    background-color: rgb(171, 128, 211);
+}
+.box3{
+    grid-area: box3;
+    background-color: rgb(171, 128, 211);
+
+}
+section{
+    background-color: aquamarine;
+    grid-area: sec;
+}
+aside{
+    grid-area: asd;
+    background-color: rgb(9, 215, 147);
+
+}
+/*tv ......................................................................................... */
+
+/* home................................................................................... */
+.home{
+  
+    grid-area: home;
+    display: grid;
+    grid-template-areas: "home-text" 
+    "home-box";
+    justify-content: center;
+    
+    }
+    .home-box{
+        width: 100%;
+        grid-area: home-box;
+        display: grid;
+        grid-template-areas: " home-link"
+        "home-links";
+        justify-content: center;
+        justify-items: center;
+      
+    
+    }
+    .home-links{
+     width:25%;
+        grid-area: home-link;
+        display: flex;
+       
+    }
+    
+    .home-link{
+        grid-area: home-links;
+        color: black;
+      
+       
+    }
+    /* .Sustainability-img{
+    
+    } */
+    
+    .home-p{
+     
+        text-align: center;
+        text-transform: capitalize;
+        padding:3%;
+       
+    }
+    .home-links{
+    width:100%;
+    
+    
+    }
+    /* .sust-link{
+       
+    } */
+    .home-linko{
+     text-decoration: underline;
+       font-weight: bold;
+      
+    }
+    .home-list{
+     
+       padding: 0 4% 8% ;
+    }
+    .heading-title{
+        text-transform: uppercase;
+        padding:2%;
+    
+    }
+    .home-btn{
+        background-color: black;
+        border-radius:1.38888889vw;
+        color:white;
+        padding:1%;
+    }
+/* Sustainability.................................................................... */
+.Sustainability{
+  
+grid-area: sust;
+display: grid;
+grid-template-areas: "sus-text" 
+"sus-box";
+justify-content: center;
+
+}
+.sustainb-box{
+    width: 100%;
+    grid-area: sus-box;
+    display: grid;
+    grid-template-areas: " sustt"
+    "sus-link";
+    justify-content: center;
+    justify-items: center;
+  
+
+}
+.sust-links{
+ 
+    grid-area: sustt;
+    display: flex;
+   
+}
+
+.sust-link{
+    grid-area: sus-link;
+    color: black;
+  
+   
+}
+/* .Sustainability-img{
+
+} */
+
+.Sustainability-p{
+ 
+    text-align: center;
+    text-transform: capitalize;
+    padding:3%;
+   
+}
+.sust-links{
+width:100%;
+
+
+}
+/* .sust-link{
+   
+} */
+.linko{
+ text-decoration: underline;
+   font-weight: bold;
+  
+}
+.sust-list{
+    width:50%;
+   padding: 0 16% 8% ;
+}
+.heading-title{
+    text-transform: uppercase;
+    padding:2%;
+
+}
+.Sustainability-btn{
+    background-color: black;
+    border-radius:1.38888889vw;
+    color:white;
+    padding:1%;
+}
+/* never...................................................................... */
+.never{
+    grid-area: nev;
+}
+.never-img{
+    width:100%;
+}
+/* ........................................................................... */
+
+.explore{
+    grid-area:exp;
+    display: grid;
+    grid-template-areas:" exp-text  "
+    "exp-box";
+    justify-content: center;
+    position: relative;
+    margin:5% 3% 8% 2%;
+}
+.exp-text{
+    grid-area:text;
+}
+.exp-text:hover{
+    opacity: .5;
+cursor: pointer;
+}
+.exp-line{
+width:25%;
+height:2px;
+display: block;
+background-color: black;
+margin:-2% 38% 5%;
+transition:.5s;
+}
+.exp-line:hover:target{
+    opacity: .5;
+    cursor: pointer;
+    transform:translateX(10%)  ;
+    display: block;
+}
+
+.explore-box{
+    /* margin:2%; */
+    grid-area: exp-box;
+    display:grid;
+    grid-template-areas:
+    "  img explore-div exp-div2"
+ 
+   
+     ;
+
+}
+.explore-1{
+    grid-area:img;
+    border-radius:10%;
+}
+.explore-1:hover{
+    transform:scale(1.1);
+}
+.line-div:after{
+    content:"";
+    width:100%;
+    height:2px;
+    display: block;
+    background-color: black;
+    border:1px solid black;
+    margin:0 -7% 3%;
+    display: none;  
+}
+.explore-div:hover .line-div:after{
+    display: block;
+}
+
+.explore-div{
+    width: 90%;
+    grid-area:exp-div;
+margin:-57% 12% 3% ;
+
+position:relative;
+
+}
+
+.explore-num{
+    grid-area:num;
+   font-size:1em;
+font-weight: bold;
+position: absolute;
+top:4%;
+left: -5%;
+
+
+}
+.explore-h2{
+ grid-area: exp-h;
+
+
+}
+.explore-a{
+    color:black;
+}
+/* .explore-more{
+    grid-area:exp-more;
+    color:black;
+    position:absolute;
+    top:50%;
+  margin:10% 7% 3%;
+
+} */
+
+.exp-2{
+    position: absolute;
+    top:-230%;
+    left:-380%;
+   
+}
+
+.num2{
+    position: absolute;
+    top:-220%;
+    left:-420%;
+}
+
+/* .more2{
+
+    margin: 5% 1%;
+} */
+
+.exp-3{
+    position: absolute;
+top:-70%;
+left:-380%;
+}
+
+.num3{
+    position: absolute;
+    top:-60%;
+    left:-420%;
+}
+/* 
+.more3{
+    position: absolute;
+   top:75%;
+   left:40%
+} */
+
+.exp-4{
+    position: absolute;
+    top:90%;
+    left:-380%
+}
+.num4{
+    position: absolute;
+    top:100%;
+    left:-420%;   
+}
+/* .more4{
+    position: absolute;
+    top:84%;
+    left:39% ;
+} */
+.explore-div2{
+    grid-area: exp-div2;
+}
+/* #img-explore:hover:target
+{
+    display:block;
+}
+.explore-div:hover {
+    display: block;
+  
+} */
+
+
+
+
+/*search ..................................................................... */
+.search{
+    grid-area: search;
+   
+padding:0 35%;
+display: grid;
+grid-template-areas: "sear-text"
+                     "box-search"
+                      "linnks"
+                      "second";
+
+
+}
+.search-title{
+    grid-area: sear-text;
+}
+.search-box{
+    grid-area: box-search ;
+    border:2px solid grey;
+    border-radius:1.52777778vw;
+    padding: 2% 0 2%;
+    background-color: white;
+    width:90%;
+
+}
+.search-icon{
+    margin:0 7%;
+    font-size: 1.5rem;
+}
+input[type="text"] {
+border: none;
+text-transform: capitalize;
+}
+.search-link{
+    grid-area: linnks;
+    display: flex;
+    margin:2% -5%;
+  
+
+}
+.searchs-li{
+    text-transform: capitalize;
+    border:1px solid grey;
+    border-radius:1.66666667vw;
+    margin: 0 .5%;
+    padding:1% .6%;
+    background-color: white;
+}
+.searchs-a{
+    color:black;
+}
+.searchs-second{
+    display: flex;
+    grid-area:second;
+    justify-content: center;
+ 
+}
+/*para-samsung .......................................................... */
+.para{
+    grid-area: samsung; 
+}
+.disapear{
+    display: none;
+}
+:target{
+    display: block;
+} 
+
+#up{
+    display: block;
+}
+
+:target#up{
+    display: none;
+}
+#up2{
+    display: block; 
+} 
+:target#up2{
+    display: none;
+}
+.para-p{
+    font-size: 1rem;
+    font-weight:bold;
+    margin:0 4% 
+}
+.apear{
+    line-height: 2;
+    padding: 0 3%;
+}
+.disapear{
+   padding: 0 4%;
+}
+
+
+
+
+.div1-show{
+    color:rgb(104, 152, 229);
+}
+/* #cheko{
+    position: absolute;
+    left: -500px;
+}
+ .checkhacks{
+    display: none;
+    transition: display 1s;
+}
+#cheko:checked~.checkhacks{
+    display:block ;
+}  */
+/* :target#up~#up{
+    display: none;
+}
+:target#up1~#up1 {
+    display: none;
+} */
+
+
+
+/* #cheko{
+    position: absolute;
+    left: -500px;
+}
+ .checkhacks{
+    display: none;
+    transition: display 1s;
+}
+#cheko:checked~.checkhacks{
+    display:block ;
+}  */
+
+/*privacy ............................................. */
+.privacy{
+    grid-area: priv;
+text-align: center;
+}
+.privacy-title{
+    font-weight: bold;
+    font-size:1em;
+}
+.privacy-sp{
+    margin-left: 3%;
+}
+.privacy-link{
+font-weight: bold;
+text-decoration: underline;
+text-transform: capitalize;
+margin-left: 3%;
+color:black;
+}
+/* table ................................................... */
+
+.shop{
+    padding:4% 6%;
+    grid-area: sh;
+    display:grid;
+    grid-template-areas: "link" ;
+    background-color: rgb(212, 212, 218);
+}
+.shop-link{
+    grid-area: link;
+   }
+.support{
+
+    padding:4% 6%;
+    grid-area: sup;
+    display:grid;
+    grid-template-areas:"linkk" ;
+    background-color: rgb(212, 212, 218);
+   
+}
+.support-links{
+    grid-area: linkk;
+ }
+.offers{
+    padding:4% 6%;
+    grid-area: off;
+    display:grid;
+    grid-template-areas: "linkkk"  ;
+    background-color: rgb(212, 212, 218);
+   
+}
+.offer-linkss{
+    grid-area: linkkk;
+}
+.sustain{
+    padding:4% 6%;
+    grid-area: sus;
+    display:grid;
+    grid-template-areas: "linkkk"  ;
+    background-color: rgb(212, 212, 218);
+   
+}
+.sustain-linksss{
+    grid-area: linkkk;
+}
+.shop-title,.support-title,.offer-title,.sustain-title{
+    font-weight: bold;
+    margin:2% 2.5% ;
+    text-transform: uppercase;
+}
+.about{
+    margin:2% 0;
+}
+.shop-link,.support-links,.offer-linkss,.sustain-linksss{
+    line-height: 2;
+    color:black;
+    margin:0 2.5%;
+    text-transform: capitalize;
+  
+}
+.shop-link:hover,.support-links:hover,.offer-linkss:hover,.sustain-linksss:hover{
+    text-decoration: underline;
+    color:blue;
+}
+
+/* copyright................................................ */
+section{
+    grid-area: foot-sec;
+    padding:2% 1.5%;
+    font-size:1.2em;
+}
+
+/*footer .......................................................................... */
+footer{
+    grid-area: foot;
+    background-color: rgb(188, 52, 52);
+    display: grid;
+    grid-template-areas:"foot foot foot foot icon icon";
+    margin:1em;
+ 
+}
+.foot-h3{
+
+text-transform: uppercase;
+font-size: .9em;
+}
+.foot-h3:hover{
+    color:blue;
+}
+.foot-links{
+    grid-area: foot;
+    display: grid;
+    grid-template-areas: 
+    "link link link link link link"
+    ; 
+}
+.foot-link{
+    grid-area: link;
+   
+    color:black;
+   
+}
+.foot-social{
+    grid-area: icon;
+    display: grid;
+    grid-template-areas: 
+    "icon icon icon icon icon icon"
+   ;
+    color:black;  
+   
+}
+.foot-icon{
+    grid-area: icon; 
+   
+}
+.link-social{
+  color:black; 
+ 
+}
+.link-socials{
+    color:black; 
+   
+}
+
+.foot-i{
+color:black;
+
+
+}
